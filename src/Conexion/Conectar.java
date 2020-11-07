@@ -4,8 +4,8 @@ import java.sql.*;
 
 public class Conectar{
 
-    static String bd = "";
-    static String login = "";
+    static String bd = "Corralon";
+    static String login = "root";
     static String password = "";
     static String url = "jdbc:mysql://localhost/"+bd;
     Connection connection = null;
@@ -15,7 +15,7 @@ public class Conectar{
         Class.forName("com.mysql.jdbc.Driver");
         connection = DriverManager.getConnection(url,login,password);
         if (connection!=null){
-            System.out.println("Conexión a base de datos "+bd+" OK\n");
+            System.out.println("Conexiï¿½n a base de datos "+bd+" OK\n");
         }
         }catch(SQLException ex){
             System.out.println(ex.getMessage());

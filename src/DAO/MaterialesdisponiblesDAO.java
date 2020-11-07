@@ -24,7 +24,7 @@ public class MaterialesdisponiblesDAO{
                 vo.setDescripcion(rs.getString(2));
                 vo.setTipo(rs.getString(3));
                 vo.setStock(rs.getInt(4));
-                vo.setPrecioventa(rs.getDouble(5));
+                vo.setPrecioventa(rs.getFloat(5));
                 vo.setCodmatc(rs.getInt(6));
                 list.add(vo);
             }
@@ -54,7 +54,7 @@ public class MaterialesdisponiblesDAO{
             ps.setString(2, vo.getDescripcion());
             ps.setString(3, vo.getTipo());
             ps.setInt(4, vo.getStock());
-            ps.setDouble(5, vo.getPrecioventa());
+            ps.setFloat(5, vo.getPrecioventa());
             ps.setInt(6, vo.getCodmatc());
             ps.executeUpdate();
         }catch(SQLException ex){
@@ -81,7 +81,7 @@ public class MaterialesdisponiblesDAO{
             ps.setString(2, vo.getDescripcion());
             ps.setString(3, vo.getTipo());
             ps.setInt(4, vo.getStock());
-            ps.setDouble(5, vo.getPrecioventa());
+            ps.setFloat(5, vo.getPrecioventa());
             ps.setInt(6, vo.getCodmatc());
             ps.executeUpdate();
         }catch(SQLException ex){
@@ -108,7 +108,7 @@ public class MaterialesdisponiblesDAO{
             ps.setString(2, vo.getDescripcion());
             ps.setString(3, vo.getTipo());
             ps.setInt(4, vo.getStock());
-            ps.setDouble(5, vo.getPrecioventa());
+            ps.setFloat(5, vo.getPrecioventa());
             ps.setInt(6, vo.getCodmatc());
             ps.executeUpdate();
         }catch(SQLException ex){

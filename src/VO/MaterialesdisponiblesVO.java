@@ -7,7 +7,7 @@ public class MaterialesdisponiblesVO {
     String descripcion;
     String tipo;
     int stock;
-    double precioventa;
+    float precioventa;
     int codmatc;
 
 public MaterialesdisponiblesVO(){}
@@ -25,7 +25,7 @@ public MaterialesdisponiblesVO(){}
     public int getStock(){
         return stock;
     }
-    public double getPrecioventa(){
+    public float getPrecioventa(){
         return precioventa;
     }
     public int getCodmatc(){
@@ -46,7 +46,7 @@ public MaterialesdisponiblesVO(){}
     public void setStock(int stock){
         this.stock = stock;
     }
-    public void setPrecioventa(double precioventa){
+    public void setPrecioventa(float precioventa){
         this.precioventa = precioventa;
     }
     public void setCodmatc(int codmatc){

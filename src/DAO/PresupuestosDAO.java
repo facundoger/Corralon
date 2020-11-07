@@ -21,7 +21,7 @@ public class PresupuestosDAO{
             while(rs.next()){
                 PresupuestosVO vo = new PresupuestosVO();
                 vo.setCodpresup(rs.getInt(1));
-                vo.setMontototal(rs.getDouble(2));
+                vo.setMontototal(rs.getFloat(2));
                 vo.setFecha(rs.getObject(3));
                 vo.setHora(rs.getObject(4));
                 vo.setDnicliente(rs.getString(5));
@@ -50,7 +50,7 @@ public class PresupuestosDAO{
         try{
             ps = conec.getConnection().prepareStatement(sql);
             ps.setInt(1, vo.getCodpresup());
-            ps.setDouble(2, vo.getMontototal());
+            ps.setFloat(2, vo.getMontototal());
             ps.setObject(3, vo.getFecha());
             ps.setObject(4, vo.getHora());
             ps.setString(5, vo.getDnicliente());
@@ -76,7 +76,7 @@ public class PresupuestosDAO{
         try{
             ps = conec.getConnection().prepareStatement(sql);
             ps.setInt(1, vo.getCodpresup());
-            ps.setDouble(2, vo.getMontototal());
+            ps.setFloat(2, vo.getMontototal());
             ps.setObject(3, vo.getFecha());
             ps.setObject(4, vo.getHora());
             ps.setString(5, vo.getDnicliente());
@@ -102,7 +102,7 @@ public class PresupuestosDAO{
         try{
             ps = conec.getConnection().prepareStatement(sql);
             ps.setInt(1, vo.getCodpresup());
-            ps.setDouble(2, vo.getMontototal());
+            ps.setFloat(2, vo.getMontototal());
             ps.setObject(3, vo.getFecha());
             ps.setObject(4, vo.getHora());
             ps.setString(5, vo.getDnicliente());

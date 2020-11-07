@@ -4,7 +4,7 @@ public class RemitosVO {
 
 /*Todo los atributos*/
     int numremito;
-    double monto;
+    float monto;
     Object fecha;
     Object hora;
     int codpedprov;
@@ -15,7 +15,7 @@ public RemitosVO(){}
     public int getNumremito(){
         return numremito;
     }
-    public double getMonto(){
+    public float getMonto(){
         return monto;
     }
     public Object getFecha(){
@@ -33,7 +33,7 @@ public RemitosVO(){}
     public void setNumremito(int numremito){
         this.numremito = numremito;
     }
-    public void setMonto(double monto){
+    public void setMonto(float monto){
         this.monto = monto;
     }
     public void setFecha(Object fecha){

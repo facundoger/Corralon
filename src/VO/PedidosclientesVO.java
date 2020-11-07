@@ -4,12 +4,12 @@ public class PedidosclientesVO {
 
 /*Todo los atributos*/
     int codpedcliente;
-    double montototal;
+    float montototal;
     Object fecha;
     Object hora;
     String modopedido;
     String formapago;
-    Object estado;
+    boolean estado;
     String dnicliente;
 
 public PedidosclientesVO(){}
@@ -18,7 +18,7 @@ public PedidosclientesVO(){}
     public int getCodpedcliente(){
         return codpedcliente;
     }
-    public double getMontototal(){
+    public float getMontototal(){
         return montototal;
     }
     public Object getFecha(){
@@ -33,7 +33,7 @@ public PedidosclientesVO(){}
     public String getFormapago(){
         return formapago;
     }
-    public Object getEstado(){
+    public boolean getEstado(){
         return estado;
     }
     public String getDnicliente(){
@@ -45,7 +45,7 @@ public PedidosclientesVO(){}
     public void setCodpedcliente(int codpedcliente){
         this.codpedcliente = codpedcliente;
     }
-    public void setMontototal(double montototal){
+    public void setMontototal(float montototal){
         this.montototal = montototal;
     }
     public void setFecha(Object fecha){
@@ -60,7 +60,7 @@ public PedidosclientesVO(){}
     public void setFormapago(String formapago){
         this.formapago = formapago;
     }
-    public void setEstado(Object estado){
+    public void setEstado(boolean estado){
         this.estado = estado;
     }
     public void setDnicliente(String dnicliente){

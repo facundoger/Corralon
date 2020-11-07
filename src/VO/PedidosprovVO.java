@@ -5,10 +5,10 @@ public class PedidosprovVO {
 /*Todo los atributos*/
     int codpedprov;
     int cantidad;
-    double preciototal;
+    float preciototal;
     Object fecha;
     Object hora;
-    Object estado;
+    boolean estado;
     String cuit;
     int codmatc;
 
@@ -21,7 +21,7 @@ public PedidosprovVO(){}
     public int getCantidad(){
         return cantidad;
     }
-    public double getPreciototal(){
+    public float getPreciototal(){
         return preciototal;
     }
     public Object getFecha(){
@@ -30,7 +30,7 @@ public PedidosprovVO(){}
     public Object getHora(){
         return hora;
     }
-    public Object getEstado(){
+    public boolean getEstado(){
         return estado;
     }
     public String getCuit(){
@@ -48,7 +48,7 @@ public PedidosprovVO(){}
     public void setCantidad(int cantidad){
         this.cantidad = cantidad;
     }
-    public void setPreciototal(double preciototal){
+    public void setPreciototal(float preciototal){
         this.preciototal = preciototal;
     }
     public void setFecha(Object fecha){
@@ -57,7 +57,7 @@ public PedidosprovVO(){}
     public void setHora(Object hora){
         this.hora = hora;
     }
-    public void setEstado(Object estado){
+    public void setEstado(boolean estado){
         this.estado = estado;
     }
     public void setCuit(String cuit){

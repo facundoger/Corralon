@@ -21,7 +21,7 @@ public class RemitosDAO{
             while(rs.next()){
                 RemitosVO vo = new RemitosVO();
                 vo.setNumremito(rs.getInt(1));
-                vo.setMonto(rs.getDouble(2));
+                vo.setMonto(rs.getFloat(2));
                 vo.setFecha(rs.getObject(3));
                 vo.setHora(rs.getObject(4));
                 vo.setCodpedprov(rs.getInt(5));
@@ -50,7 +50,7 @@ public class RemitosDAO{
         try{
             ps = conec.getConnection().prepareStatement(sql);
             ps.setInt(1, vo.getNumremito());
-            ps.setDouble(2, vo.getMonto());
+            ps.setFloat(2, vo.getMonto());
             ps.setObject(3, vo.getFecha());
             ps.setObject(4, vo.getHora());
             ps.setInt(5, vo.getCodpedprov());
@@ -76,7 +76,7 @@ public class RemitosDAO{
         try{
             ps = conec.getConnection().prepareStatement(sql);
             ps.setInt(1, vo.getNumremito());
-            ps.setDouble(2, vo.getMonto());
+            ps.setFloat(2, vo.getMonto());
             ps.setObject(3, vo.getFecha());
             ps.setObject(4, vo.getHora());
             ps.setInt(5, vo.getCodpedprov());
@@ -102,7 +102,7 @@ public class RemitosDAO{
         try{
             ps = conec.getConnection().prepareStatement(sql);
             ps.setInt(1, vo.getNumremito());
-            ps.setDouble(2, vo.getMonto());
+            ps.setFloat(2, vo.getMonto());
             ps.setObject(3, vo.getFecha());
             ps.setObject(4, vo.getHora());
             ps.setInt(5, vo.getCodpedprov());

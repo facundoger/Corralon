@@ -23,7 +23,7 @@ public class CatalogosDAO{
                 vo.setCodmatc(rs.getInt(1));
                 vo.setDescripcion(rs.getString(2));
                 vo.setTipo(rs.getString(3));
-                vo.setPrecio(rs.getDouble(4));
+                vo.setPrecio(rs.getFloat(4));
                 list.add(vo);
             }
         }catch(SQLException ex){
@@ -51,7 +51,7 @@ public class CatalogosDAO{
             ps.setInt(1, vo.getCodmatc());
             ps.setString(2, vo.getDescripcion());
             ps.setString(3, vo.getTipo());
-            ps.setDouble(4, vo.getPrecio());
+            ps.setFloat(4, vo.getPrecio());
             ps.executeUpdate();
         }catch(SQLException ex){
             System.out.println(ex.getMessage());
@@ -76,7 +76,7 @@ public class CatalogosDAO{
             ps.setInt(1, vo.getCodmatc());
             ps.setString(2, vo.getDescripcion());
             ps.setString(3, vo.getTipo());
-            ps.setDouble(4, vo.getPrecio());
+            ps.setFloat(4, vo.getPrecio());
             ps.executeUpdate();
         }catch(SQLException ex){
             System.out.println(ex.getMessage());
@@ -101,7 +101,7 @@ public class CatalogosDAO{
             ps.setInt(1, vo.getCodmatc());
             ps.setString(2, vo.getDescripcion());
             ps.setString(3, vo.getTipo());
-            ps.setDouble(4, vo.getPrecio());
+            ps.setFloat(4, vo.getPrecio());
             ps.executeUpdate();
         }catch(SQLException ex){
             System.out.println(ex.getMessage());

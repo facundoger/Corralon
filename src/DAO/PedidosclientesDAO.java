@@ -21,12 +21,12 @@ public class PedidosclientesDAO{
             while(rs.next()){
                 PedidosclientesVO vo = new PedidosclientesVO();
                 vo.setCodpedcliente(rs.getInt(1));
-                vo.setMontototal(rs.getDouble(2));
+                vo.setMontototal(rs.getFloat(2));
                 vo.setFecha(rs.getObject(3));
                 vo.setHora(rs.getObject(4));
                 vo.setModopedido(rs.getString(5));
                 vo.setFormapago(rs.getString(6));
-                vo.setEstado(rs.getObject(7));
+                vo.setEstado(rs.getBoolean(7));
                 vo.setDnicliente(rs.getString(8));
                 list.add(vo);
             }
@@ -53,12 +53,12 @@ public class PedidosclientesDAO{
         try{
             ps = conec.getConnection().prepareStatement(sql);
             ps.setInt(1, vo.getCodpedcliente());
-            ps.setDouble(2, vo.getMontototal());
+            ps.setFloat(2, vo.getMontototal());
             ps.setObject(3, vo.getFecha());
             ps.setObject(4, vo.getHora());
             ps.setString(5, vo.getModopedido());
             ps.setString(6, vo.getFormapago());
-            ps.setObject(7, vo.getEstado());
+            ps.setBoolean(7, vo.getEstado());
             ps.setString(8, vo.getDnicliente());
             ps.executeUpdate();
         }catch(SQLException ex){
@@ -82,12 +82,12 @@ public class PedidosclientesDAO{
         try{
             ps = conec.getConnection().prepareStatement(sql);
             ps.setInt(1, vo.getCodpedcliente());
-            ps.setDouble(2, vo.getMontototal());
+            ps.setFloat(2, vo.getMontototal());
             ps.setObject(3, vo.getFecha());
             ps.setObject(4, vo.getHora());
             ps.setString(5, vo.getModopedido());
             ps.setString(6, vo.getFormapago());
-            ps.setObject(7, vo.getEstado());
+            ps.setBoolean(7, vo.getEstado());
             ps.setString(8, vo.getDnicliente());
             ps.executeUpdate();
         }catch(SQLException ex){
@@ -111,12 +111,12 @@ public class PedidosclientesDAO{
         try{
             ps = conec.getConnection().prepareStatement(sql);
             ps.setInt(1, vo.getCodpedcliente());
-            ps.setDouble(2, vo.getMontototal());
+            ps.setFloat(2, vo.getMontototal());
             ps.setObject(3, vo.getFecha());
             ps.setObject(4, vo.getHora());
             ps.setString(5, vo.getModopedido());
             ps.setString(6, vo.getFormapago());
-            ps.setObject(7, vo.getEstado());
+            ps.setBoolean(7, vo.getEstado());
             ps.setString(8, vo.getDnicliente());
             ps.executeUpdate();
         }catch(SQLException ex){

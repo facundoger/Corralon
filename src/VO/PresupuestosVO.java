@@ -4,7 +4,7 @@ public class PresupuestosVO {
 
 /*Todo los atributos*/
     int codpresup;
-    double montototal;
+    float montototal;
     Object fecha;
     Object hora;
     String dnicliente;
@@ -15,7 +15,7 @@ public PresupuestosVO(){}
     public int getCodpresup(){
         return codpresup;
     }
-    public double getMontototal(){
+    public float getMontototal(){
         return montototal;
     }
     public Object getFecha(){
@@ -33,7 +33,7 @@ public PresupuestosVO(){}
     public void setCodpresup(int codpresup){
         this.codpresup = codpresup;
     }
-    public void setMontototal(double montototal){
+    public void setMontototal(float montototal){
         this.montototal = montototal;
     }
     public void setFecha(Object fecha){

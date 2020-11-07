@@ -6,7 +6,7 @@ public class CatalogosVO {
     int codmatc;
     String descripcion;
     String tipo;
-    double precio;
+    float precio;
 
 public CatalogosVO(){}
 
@@ -20,7 +20,7 @@ public CatalogosVO(){}
     public String getTipo(){
         return tipo;
     }
-    public double getPrecio(){
+    public float getPrecio(){
         return precio;
     }
 
@@ -35,7 +35,7 @@ public CatalogosVO(){}
     public void setTipo(String tipo){
         this.tipo = tipo;
     }
-    public void setPrecio(double precio){
+    public void setPrecio(float precio){
         this.precio = precio;
     }
 
