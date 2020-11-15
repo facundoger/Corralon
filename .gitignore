@@ -1,6 +1,8 @@
-/build/
+/.gradle/
 /.idea/
+/build/
 /nbproject/
+/out/
 /Corralon.iml
 /build.xml
 /manifest.mf
