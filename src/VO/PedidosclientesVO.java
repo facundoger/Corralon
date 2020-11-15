@@ -2,7 +2,6 @@ package VO;
 
 public class PedidosclientesVO {
 
-    /*Todo los atributos*/
     int codpedcliente;
     float montototal;
     Object fecha;
@@ -15,7 +14,6 @@ public class PedidosclientesVO {
     public PedidosclientesVO() {
     }
 
-    /*Todo los codigos get*/
     public int getCodpedcliente() {
         return codpedcliente;
     }
@@ -48,8 +46,6 @@ public class PedidosclientesVO {
         return dnicliente;
     }
 
-
-    /*Todo los codigos set*/
     public void setCodpedcliente(int codpedcliente) {
         this.codpedcliente = codpedcliente;
     }

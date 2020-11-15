@@ -2,7 +2,6 @@ package VO;
 
 public class ProveedoresVO {
 
-    /*Todo los atributos*/
     String cuit;
     String nombre;
     String telefono;
@@ -11,7 +10,6 @@ public class ProveedoresVO {
     public ProveedoresVO() {
     }
 
-    /*Todo los codigos get*/
     public String getCuit() {
         return cuit;
     }
@@ -28,8 +26,6 @@ public class ProveedoresVO {
         return direccion;
     }
 
-
-    /*Todo los codigos set*/
     public void setCuit(String cuit) {
         this.cuit = cuit;
     }

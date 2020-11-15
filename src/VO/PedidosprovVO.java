@@ -2,7 +2,6 @@ package VO;
 
 public class PedidosprovVO {
 
-    /*Todo los atributos*/
     int codpedprov;
     int cantidad;
     float preciototal;
@@ -15,7 +14,6 @@ public class PedidosprovVO {
     public PedidosprovVO() {
     }
 
-    /*Todo los codigos get*/
     public int getCodpedprov() {
         return codpedprov;
     }
@@ -48,8 +46,6 @@ public class PedidosprovVO {
         return codmatc;
     }
 
-
-    /*Todo los codigos set*/
     public void setCodpedprov(int codpedprov) {
         this.codpedprov = codpedprov;
     }

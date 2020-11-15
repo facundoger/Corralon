@@ -2,7 +2,6 @@ package VO;
 
 public class ClientesVO {
 
-    /*Todo los atributos*/
     String dnicliente;
     String nombre;
     String apellido;
@@ -14,7 +13,6 @@ public class ClientesVO {
     public ClientesVO() {
     }
 
-    /*Todo los codigos get*/
     public String getDnicliente() {
         return dnicliente;
     }
@@ -43,8 +41,6 @@ public class ClientesVO {
         return referencia;
     }
 
-
-    /*Todo los codigos set*/
     public void setDnicliente(String dnicliente) {
         this.dnicliente = dnicliente;
     }

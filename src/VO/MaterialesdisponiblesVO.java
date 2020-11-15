@@ -2,7 +2,6 @@ package VO;
 
 public class MaterialesdisponiblesVO {
 
-    /*Todo los atributos*/
     int codmaterial;
     String descripcion;
     String tipo;
@@ -13,7 +12,6 @@ public class MaterialesdisponiblesVO {
     public MaterialesdisponiblesVO() {
     }
 
-    /*Todo los codigos get*/
     public int getCodmaterial() {
         return codmaterial;
     }
@@ -38,8 +36,6 @@ public class MaterialesdisponiblesVO {
         return codmatc;
     }
 
-
-    /*Todo los codigos set*/
     public void setCodmaterial(int codmaterial) {
         this.codmaterial = codmaterial;
     }

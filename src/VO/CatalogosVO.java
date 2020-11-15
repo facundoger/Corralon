@@ -2,7 +2,6 @@ package VO;
 
 public class CatalogosVO {
 
-    /*Todo los atributos*/
     int codmatc;
     String descripcion;
     String tipo;
@@ -11,7 +10,6 @@ public class CatalogosVO {
     public CatalogosVO() {
     }
 
-    /*Todo los codigos get*/
     public int getCodmatc() {
         return codmatc;
     }
@@ -28,8 +26,6 @@ public class CatalogosVO {
         return precio;
     }
 
-
-    /*Todo los codigos set*/
     public void setCodmatc(int codmatc) {
         this.codmatc = codmatc;
     }

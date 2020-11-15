@@ -2,7 +2,6 @@ package VO;
 
 public class RemitosVO {
 
-    /*Todo los atributos*/
     int numremito;
     float monto;
     Object fecha;
@@ -12,7 +11,6 @@ public class RemitosVO {
     public RemitosVO() {
     }
 
-    /*Todo los codigos get*/
     public int getNumremito() {
         return numremito;
     }
@@ -33,8 +31,6 @@ public class RemitosVO {
         return codpedprov;
     }
 
-
-    /*Todo los codigos set*/
     public void setNumremito(int numremito) {
         this.numremito = numremito;
     }

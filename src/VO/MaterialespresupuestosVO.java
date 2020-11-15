@@ -2,7 +2,6 @@ package VO;
 
 public class MaterialespresupuestosVO {
 
-    /*Todo los atributos*/
     int codmaterial;
     int codpresup;
     int cantidad;
@@ -10,7 +9,6 @@ public class MaterialespresupuestosVO {
     public MaterialespresupuestosVO() {
     }
 
-    /*Todo los codigos get*/
     public int getCodmaterial() {
         return codmaterial;
     }
@@ -23,8 +21,6 @@ public class MaterialespresupuestosVO {
         return cantidad;
     }
 
-
-    /*Todo los codigos set*/
     public void setCodmaterial(int codmaterial) {
         this.codmaterial = codmaterial;
     }

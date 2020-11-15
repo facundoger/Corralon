@@ -2,7 +2,6 @@ package VO;
 
 public class PresupuestosVO {
 
-    /*Todo los atributos*/
     int codpresup;
     float montototal;
     Object fecha;
@@ -12,7 +11,6 @@ public class PresupuestosVO {
     public PresupuestosVO() {
     }
 
-    /*Todo los codigos get*/
     public int getCodpresup() {
         return codpresup;
     }
@@ -33,8 +31,6 @@ public class PresupuestosVO {
         return dnicliente;
     }
 
-
-    /*Todo los codigos set*/
     public void setCodpresup(int codpresup) {
         this.codpresup = codpresup;
     }
