@@ -2,17 +2,18 @@ package Tabla;
 
 import DAO.PresupuestosDAO;
 import VO.PresupuestosVO;
+
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import java.util.ArrayList;
 
 
-public class Tabla_PresupuestosVO{
+public class Tabla_PresupuestosVO {
 
-   PresupuestosDAO dao = null;
+    PresupuestosDAO dao = null;
 
 
-    public void visualizar_PresupuestosVO(JTable tabla){
+    public void visualizar_PresupuestosVO(JTable tabla) {
         DefaultTableModel dt = new DefaultTableModel();
         dt.addColumn("codpresup");
         dt.addColumn("montototal");
@@ -24,8 +25,8 @@ public class Tabla_PresupuestosVO{
         PresupuestosVO vo = new PresupuestosVO();
         ArrayList<PresupuestosVO> list = dao.Listar_PresupuestosVO();
 
-        if(list.size() > 0){
-            for(int i=0; i<list.size(); i++){
+        if (list.size() > 0) {
+            for (int i = 0; i < list.size(); i++) {
                 Object fila[] = new Object[5];
                 vo = list.get(i);
                 fila[0] = vo.getCodpresup();

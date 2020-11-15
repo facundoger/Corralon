@@ -2,17 +2,18 @@ package Tabla;
 
 import DAO.PedidosclientesDAO;
 import VO.PedidosclientesVO;
+
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import java.util.ArrayList;
 
 
-public class Tabla_PedidosclientesVO{
+public class Tabla_PedidosclientesVO {
 
-   PedidosclientesDAO dao = null;
+    PedidosclientesDAO dao = null;
 
 
-    public void visualizar_PedidosclientesVO(JTable tabla){
+    public void visualizar_PedidosclientesVO(JTable tabla) {
         DefaultTableModel dt = new DefaultTableModel();
         dt.addColumn("codpedcliente");
         dt.addColumn("montototal");
@@ -27,8 +28,8 @@ public class Tabla_PedidosclientesVO{
         PedidosclientesVO vo = new PedidosclientesVO();
         ArrayList<PedidosclientesVO> list = dao.Listar_PedidosclientesVO();
 
-        if(list.size() > 0){
-            for(int i=0; i<list.size(); i++){
+        if (list.size() > 0) {
+            for (int i = 0; i < list.size(); i++) {
                 Object fila[] = new Object[8];
                 vo = list.get(i);
                 fila[0] = vo.getCodpedcliente();

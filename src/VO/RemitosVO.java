@@ -2,47 +2,56 @@ package VO;
 
 public class RemitosVO {
 
-/*Todo los atributos*/
+    /*Todo los atributos*/
     int numremito;
     float monto;
     Object fecha;
     Object hora;
     int codpedprov;
 
-public RemitosVO(){}
+    public RemitosVO() {
+    }
 
-/*Todo los codigos get*/
-    public int getNumremito(){
+    /*Todo los codigos get*/
+    public int getNumremito() {
         return numremito;
     }
-    public float getMonto(){
+
+    public float getMonto() {
         return monto;
     }
-    public Object getFecha(){
+
+    public Object getFecha() {
         return fecha;
     }
-    public Object getHora(){
+
+    public Object getHora() {
         return hora;
     }
-    public int getCodpedprov(){
+
+    public int getCodpedprov() {
         return codpedprov;
     }
 
 
-/*Todo los codigos set*/
-    public void setNumremito(int numremito){
+    /*Todo los codigos set*/
+    public void setNumremito(int numremito) {
         this.numremito = numremito;
     }
-    public void setMonto(float monto){
+
+    public void setMonto(float monto) {
         this.monto = monto;
     }
-    public void setFecha(Object fecha){
+
+    public void setFecha(Object fecha) {
         this.fecha = fecha;
     }
-    public void setHora(Object hora){
+
+    public void setHora(Object hora) {
         this.hora = hora;
     }
-    public void setCodpedprov(int codpedprov){
+
+    public void setCodpedprov(int codpedprov) {
         this.codpedprov = codpedprov;
     }
 

@@ -2,23 +2,24 @@ package DAO;
 
 import Conexion.Conectar;
 import VO.PedidosclientesVO;
+
 import java.sql.*;
 import java.util.ArrayList;
 
 
 /*Metodo listar*/
-public class PedidosclientesDAO{
+public class PedidosclientesDAO {
 
-    public ArrayList<PedidosclientesVO> Listar_PedidosclientesVO(){
+    public ArrayList<PedidosclientesVO> Listar_PedidosclientesVO() {
         ArrayList<PedidosclientesVO> list = new ArrayList<PedidosclientesVO>();
         Conectar conec = new Conectar();
         String sql = "SELECT * FROM tabla;";
         ResultSet rs = null;
         PreparedStatement ps = null;
-        try{
+        try {
             ps = conec.getConnection().prepareStatement(sql);
             rs = ps.executeQuery();
-            while(rs.next()){
+            while (rs.next()) {
                 PedidosclientesVO vo = new PedidosclientesVO();
                 vo.setCodpedcliente(rs.getInt(1));
                 vo.setMontototal(rs.getFloat(2));
@@ -30,27 +31,28 @@ public class PedidosclientesDAO{
                 vo.setDnicliente(rs.getString(8));
                 list.add(vo);
             }
-        }catch(SQLException ex){
+        } catch (SQLException ex) {
             System.out.println(ex.getMessage());
-        }catch(Exception ex){
+        } catch (Exception ex) {
             System.out.println(ex.getMessage());
-        }finally{
-            try{
+        } finally {
+            try {
                 ps.close();
                 rs.close();
                 conec.desconectar();
-            }catch(Exception ex){}
+            } catch (Exception ex) {
+            }
         }
         return list;
     }
 
 
-/*Metodo agregar*/
-    public void Agregar_PedidosclientesVO(PedidosclientesVO vo){
+    /*Metodo agregar*/
+    public void Agregar_PedidosclientesVO(PedidosclientesVO vo) {
         Conectar conec = new Conectar();
         String sql = "INSERT INTO tabla (campo1, campo2) VALUES(?,?);";
         PreparedStatement ps = null;
-        try{
+        try {
             ps = conec.getConnection().prepareStatement(sql);
             ps.setInt(1, vo.getCodpedcliente());
             ps.setFloat(2, vo.getMontototal());
@@ -61,25 +63,26 @@ public class PedidosclientesDAO{
             ps.setBoolean(7, vo.getEstado());
             ps.setString(8, vo.getDnicliente());
             ps.executeUpdate();
-        }catch(SQLException ex){
+        } catch (SQLException ex) {
             System.out.println(ex.getMessage());
-        }catch(Exception ex){
+        } catch (Exception ex) {
             System.out.println(ex.getMessage());
-        }finally{
-            try{
+        } finally {
+            try {
                 ps.close();
                 conec.desconectar();
-            }catch(Exception ex){}
+            } catch (Exception ex) {
+            }
         }
     }
 
 
-/*Metodo Modificar*/
-    public void Modificar_PedidosclientesVO(PedidosclientesVO vo){
+    /*Metodo Modificar*/
+    public void Modificar_PedidosclientesVO(PedidosclientesVO vo) {
         Conectar conec = new Conectar();
         String sql = "UPDATE tabla SET campo2 = ? WHERE campo1 = ?;";
         PreparedStatement ps = null;
-        try{
+        try {
             ps = conec.getConnection().prepareStatement(sql);
             ps.setInt(1, vo.getCodpedcliente());
             ps.setFloat(2, vo.getMontototal());
@@ -90,25 +93,26 @@ public class PedidosclientesDAO{
             ps.setBoolean(7, vo.getEstado());
             ps.setString(8, vo.getDnicliente());
             ps.executeUpdate();
-        }catch(SQLException ex){
+        } catch (SQLException ex) {
             System.out.println(ex.getMessage());
-        }catch(Exception ex){
+        } catch (Exception ex) {
             System.out.println(ex.getMessage());
-        }finally{
-            try{
+        } finally {
+            try {
                 ps.close();
                 conec.desconectar();
-            }catch(Exception ex){}
+            } catch (Exception ex) {
+            }
         }
     }
 
 
-/*Metodo Eliminar*/
-    public void Eliminar_PedidosclientesVO(PedidosclientesVO vo){
+    /*Metodo Eliminar*/
+    public void Eliminar_PedidosclientesVO(PedidosclientesVO vo) {
         Conectar conec = new Conectar();
         String sql = "DELETE FROM tabla WHERE campo1 = ?;";
         PreparedStatement ps = null;
-        try{
+        try {
             ps = conec.getConnection().prepareStatement(sql);
             ps.setInt(1, vo.getCodpedcliente());
             ps.setFloat(2, vo.getMontototal());
@@ -119,15 +123,16 @@ public class PedidosclientesDAO{
             ps.setBoolean(7, vo.getEstado());
             ps.setString(8, vo.getDnicliente());
             ps.executeUpdate();
-        }catch(SQLException ex){
+        } catch (SQLException ex) {
             System.out.println(ex.getMessage());
-        }catch(Exception ex){
+        } catch (Exception ex) {
             System.out.println(ex.getMessage());
-        }finally{
-            try{
+        } finally {
+            try {
                 ps.close();
                 conec.desconectar();
-            }catch(Exception ex){}
+            } catch (Exception ex) {
+            }
         }
     }
 

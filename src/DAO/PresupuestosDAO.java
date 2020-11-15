@@ -2,23 +2,24 @@ package DAO;
 
 import Conexion.Conectar;
 import VO.PresupuestosVO;
+
 import java.sql.*;
 import java.util.ArrayList;
 
 
 /*Metodo listar*/
-public class PresupuestosDAO{
+public class PresupuestosDAO {
 
-    public ArrayList<PresupuestosVO> Listar_PresupuestosVO(){
+    public ArrayList<PresupuestosVO> Listar_PresupuestosVO() {
         ArrayList<PresupuestosVO> list = new ArrayList<PresupuestosVO>();
         Conectar conec = new Conectar();
         String sql = "SELECT * FROM tabla;";
         ResultSet rs = null;
         PreparedStatement ps = null;
-        try{
+        try {
             ps = conec.getConnection().prepareStatement(sql);
             rs = ps.executeQuery();
-            while(rs.next()){
+            while (rs.next()) {
                 PresupuestosVO vo = new PresupuestosVO();
                 vo.setCodpresup(rs.getInt(1));
                 vo.setMontototal(rs.getFloat(2));
@@ -27,27 +28,28 @@ public class PresupuestosDAO{
                 vo.setDnicliente(rs.getString(5));
                 list.add(vo);
             }
-        }catch(SQLException ex){
+        } catch (SQLException ex) {
             System.out.println(ex.getMessage());
-        }catch(Exception ex){
+        } catch (Exception ex) {
             System.out.println(ex.getMessage());
-        }finally{
-            try{
+        } finally {
+            try {
                 ps.close();
                 rs.close();
                 conec.desconectar();
-            }catch(Exception ex){}
+            } catch (Exception ex) {
+            }
         }
         return list;
     }
 
 
-/*Metodo agregar*/
-    public void Agregar_PresupuestosVO(PresupuestosVO vo){
+    /*Metodo agregar*/
+    public void Agregar_PresupuestosVO(PresupuestosVO vo) {
         Conectar conec = new Conectar();
         String sql = "INSERT INTO tabla (campo1, campo2) VALUES(?,?);";
         PreparedStatement ps = null;
-        try{
+        try {
             ps = conec.getConnection().prepareStatement(sql);
             ps.setInt(1, vo.getCodpresup());
             ps.setFloat(2, vo.getMontototal());
@@ -55,25 +57,26 @@ public class PresupuestosDAO{
             ps.setObject(4, vo.getHora());
             ps.setString(5, vo.getDnicliente());
             ps.executeUpdate();
-        }catch(SQLException ex){
+        } catch (SQLException ex) {
             System.out.println(ex.getMessage());
-        }catch(Exception ex){
+        } catch (Exception ex) {
             System.out.println(ex.getMessage());
-        }finally{
-            try{
+        } finally {
+            try {
                 ps.close();
                 conec.desconectar();
-            }catch(Exception ex){}
+            } catch (Exception ex) {
+            }
         }
     }
 
 
-/*Metodo Modificar*/
-    public void Modificar_PresupuestosVO(PresupuestosVO vo){
+    /*Metodo Modificar*/
+    public void Modificar_PresupuestosVO(PresupuestosVO vo) {
         Conectar conec = new Conectar();
         String sql = "UPDATE tabla SET campo2 = ? WHERE campo1 = ?;";
         PreparedStatement ps = null;
-        try{
+        try {
             ps = conec.getConnection().prepareStatement(sql);
             ps.setInt(1, vo.getCodpresup());
             ps.setFloat(2, vo.getMontototal());
@@ -81,25 +84,26 @@ public class PresupuestosDAO{
             ps.setObject(4, vo.getHora());
             ps.setString(5, vo.getDnicliente());
             ps.executeUpdate();
-        }catch(SQLException ex){
+        } catch (SQLException ex) {
             System.out.println(ex.getMessage());
-        }catch(Exception ex){
+        } catch (Exception ex) {
             System.out.println(ex.getMessage());
-        }finally{
-            try{
+        } finally {
+            try {
                 ps.close();
                 conec.desconectar();
-            }catch(Exception ex){}
+            } catch (Exception ex) {
+            }
         }
     }
 
 
-/*Metodo Eliminar*/
-    public void Eliminar_PresupuestosVO(PresupuestosVO vo){
+    /*Metodo Eliminar*/
+    public void Eliminar_PresupuestosVO(PresupuestosVO vo) {
         Conectar conec = new Conectar();
         String sql = "DELETE FROM tabla WHERE campo1 = ?;";
         PreparedStatement ps = null;
-        try{
+        try {
             ps = conec.getConnection().prepareStatement(sql);
             ps.setInt(1, vo.getCodpresup());
             ps.setFloat(2, vo.getMontototal());
@@ -107,15 +111,16 @@ public class PresupuestosDAO{
             ps.setObject(4, vo.getHora());
             ps.setString(5, vo.getDnicliente());
             ps.executeUpdate();
-        }catch(SQLException ex){
+        } catch (SQLException ex) {
             System.out.println(ex.getMessage());
-        }catch(Exception ex){
+        } catch (Exception ex) {
             System.out.println(ex.getMessage());
-        }finally{
-            try{
+        } finally {
+            try {
                 ps.close();
                 conec.desconectar();
-            }catch(Exception ex){}
+            } catch (Exception ex) {
+            }
         }
     }
 

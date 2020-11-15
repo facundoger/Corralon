@@ -2,7 +2,7 @@ package VO;
 
 public class MaterialesdisponiblesVO {
 
-/*Todo los atributos*/
+    /*Todo los atributos*/
     int codmaterial;
     String descripcion;
     String tipo;
@@ -10,46 +10,57 @@ public class MaterialesdisponiblesVO {
     float precioventa;
     int codmatc;
 
-public MaterialesdisponiblesVO(){}
+    public MaterialesdisponiblesVO() {
+    }
 
-/*Todo los codigos get*/
-    public int getCodmaterial(){
+    /*Todo los codigos get*/
+    public int getCodmaterial() {
         return codmaterial;
     }
-    public String getDescripcion(){
+
+    public String getDescripcion() {
         return descripcion;
     }
-    public String getTipo(){
+
+    public String getTipo() {
         return tipo;
     }
-    public int getStock(){
+
+    public int getStock() {
         return stock;
     }
-    public float getPrecioventa(){
+
+    public float getPrecioventa() {
         return precioventa;
     }
-    public int getCodmatc(){
+
+    public int getCodmatc() {
         return codmatc;
     }
 
 
-/*Todo los codigos set*/
-    public void setCodmaterial(int codmaterial){
+    /*Todo los codigos set*/
+    public void setCodmaterial(int codmaterial) {
         this.codmaterial = codmaterial;
     }
-    public void setDescripcion(String descripcion){
+
+    public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
-    public void setTipo(String tipo){
+
+    public void setTipo(String tipo) {
         this.tipo = tipo;
     }
-    public void setStock(int stock){
+
+    public void setStock(int stock) {
         this.stock = stock;
     }
-    public void setPrecioventa(float precioventa){
+
+    public void setPrecioventa(float precioventa) {
         this.precioventa = precioventa;
     }
-    public void setCodmatc(int codmatc){
+
+    public void setCodmatc(int codmatc) {
         this.codmatc = codmatc;
     }
 

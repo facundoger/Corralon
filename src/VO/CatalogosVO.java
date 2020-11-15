@@ -2,40 +2,47 @@ package VO;
 
 public class CatalogosVO {
 
-/*Todo los atributos*/
+    /*Todo los atributos*/
     int codmatc;
     String descripcion;
     String tipo;
     float precio;
 
-public CatalogosVO(){}
+    public CatalogosVO() {
+    }
 
-/*Todo los codigos get*/
-    public int getCodmatc(){
+    /*Todo los codigos get*/
+    public int getCodmatc() {
         return codmatc;
     }
-    public String getDescripcion(){
+
+    public String getDescripcion() {
         return descripcion;
     }
-    public String getTipo(){
+
+    public String getTipo() {
         return tipo;
     }
-    public float getPrecio(){
+
+    public float getPrecio() {
         return precio;
     }
 
 
-/*Todo los codigos set*/
-    public void setCodmatc(int codmatc){
+    /*Todo los codigos set*/
+    public void setCodmatc(int codmatc) {
         this.codmatc = codmatc;
     }
-    public void setDescripcion(String descripcion){
+
+    public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
-    public void setTipo(String tipo){
+
+    public void setTipo(String tipo) {
         this.tipo = tipo;
     }
-    public void setPrecio(float precio){
+
+    public void setPrecio(float precio) {
         this.precio = precio;
     }
 

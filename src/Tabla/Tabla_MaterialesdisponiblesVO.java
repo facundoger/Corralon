@@ -2,17 +2,18 @@ package Tabla;
 
 import DAO.MaterialesdisponiblesDAO;
 import VO.MaterialesdisponiblesVO;
+
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import java.util.ArrayList;
 
 
-public class Tabla_MaterialesdisponiblesVO{
+public class Tabla_MaterialesdisponiblesVO {
 
-   MaterialesdisponiblesDAO dao = null;
+    MaterialesdisponiblesDAO dao = null;
 
 
-    public void visualizar_MaterialesdisponiblesVO(JTable tabla){
+    public void visualizar_MaterialesdisponiblesVO(JTable tabla) {
         DefaultTableModel dt = new DefaultTableModel();
         dt.addColumn("codmaterial");
         dt.addColumn("descripcion");
@@ -25,8 +26,8 @@ public class Tabla_MaterialesdisponiblesVO{
         MaterialesdisponiblesVO vo = new MaterialesdisponiblesVO();
         ArrayList<MaterialesdisponiblesVO> list = dao.Listar_MaterialesdisponiblesVO();
 
-        if(list.size() > 0){
-            for(int i=0; i<list.size(); i++){
+        if (list.size() > 0) {
+            for (int i = 0; i < list.size(); i++) {
                 Object fila[] = new Object[6];
                 vo = list.get(i);
                 fila[0] = vo.getCodmaterial();

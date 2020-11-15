@@ -2,17 +2,18 @@ package Tabla;
 
 import DAO.CatalogosDAO;
 import VO.CatalogosVO;
+
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import java.util.ArrayList;
 
 
-public class Tabla_CatalogosVO{
+public class Tabla_CatalogosVO {
 
-   CatalogosDAO dao = null;
+    CatalogosDAO dao = null;
 
 
-    public void visualizar_CatalogosVO(JTable tabla){
+    public void visualizar_CatalogosVO(JTable tabla) {
         DefaultTableModel dt = new DefaultTableModel();
         dt.addColumn("codmatc");
         dt.addColumn("descripcion");
@@ -23,8 +24,8 @@ public class Tabla_CatalogosVO{
         CatalogosVO vo = new CatalogosVO();
         ArrayList<CatalogosVO> list = dao.Listar_CatalogosVO();
 
-        if(list.size() > 0){
-            for(int i=0; i<list.size(); i++){
+        if (list.size() > 0) {
+            for (int i = 0; i < list.size(); i++) {
                 Object fila[] = new Object[4];
                 vo = list.get(i);
                 fila[0] = vo.getCodmatc();

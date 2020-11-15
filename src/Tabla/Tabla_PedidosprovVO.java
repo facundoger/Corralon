@@ -2,17 +2,18 @@ package Tabla;
 
 import DAO.PedidosprovDAO;
 import VO.PedidosprovVO;
+
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import java.util.ArrayList;
 
 
-public class Tabla_PedidosprovVO{
+public class Tabla_PedidosprovVO {
 
-   PedidosprovDAO dao = null;
+    PedidosprovDAO dao = null;
 
 
-    public void visualizar_PedidosprovVO(JTable tabla){
+    public void visualizar_PedidosprovVO(JTable tabla) {
         DefaultTableModel dt = new DefaultTableModel();
         dt.addColumn("codpedprov");
         dt.addColumn("cantidad");
@@ -27,8 +28,8 @@ public class Tabla_PedidosprovVO{
         PedidosprovVO vo = new PedidosprovVO();
         ArrayList<PedidosprovVO> list = dao.Listar_PedidosprovVO();
 
-        if(list.size() > 0){
-            for(int i=0; i<list.size(); i++){
+        if (list.size() > 0) {
+            for (int i = 0; i < list.size(); i++) {
                 Object fila[] = new Object[8];
                 vo = list.get(i);
                 fila[0] = vo.getCodpedprov();

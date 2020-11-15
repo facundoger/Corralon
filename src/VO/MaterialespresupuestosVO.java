@@ -2,33 +2,38 @@ package VO;
 
 public class MaterialespresupuestosVO {
 
-/*Todo los atributos*/
+    /*Todo los atributos*/
     int codmaterial;
     int codpresup;
     int cantidad;
 
-public MaterialespresupuestosVO(){}
+    public MaterialespresupuestosVO() {
+    }
 
-/*Todo los codigos get*/
-    public int getCodmaterial(){
+    /*Todo los codigos get*/
+    public int getCodmaterial() {
         return codmaterial;
     }
-    public int getCodpresup(){
+
+    public int getCodpresup() {
         return codpresup;
     }
-    public int getCantidad(){
+
+    public int getCantidad() {
         return cantidad;
     }
 
 
-/*Todo los codigos set*/
-    public void setCodmaterial(int codmaterial){
+    /*Todo los codigos set*/
+    public void setCodmaterial(int codmaterial) {
         this.codmaterial = codmaterial;
     }
-    public void setCodpresup(int codpresup){
+
+    public void setCodpresup(int codpresup) {
         this.codpresup = codpresup;
     }
-    public void setCantidad(int cantidad){
+
+    public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
 

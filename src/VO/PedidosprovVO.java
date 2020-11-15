@@ -2,7 +2,7 @@ package VO;
 
 public class PedidosprovVO {
 
-/*Todo los atributos*/
+    /*Todo los atributos*/
     int codpedprov;
     int cantidad;
     float preciototal;
@@ -12,58 +12,73 @@ public class PedidosprovVO {
     String cuit;
     int codmatc;
 
-public PedidosprovVO(){}
+    public PedidosprovVO() {
+    }
 
-/*Todo los codigos get*/
-    public int getCodpedprov(){
+    /*Todo los codigos get*/
+    public int getCodpedprov() {
         return codpedprov;
     }
-    public int getCantidad(){
+
+    public int getCantidad() {
         return cantidad;
     }
-    public float getPreciototal(){
+
+    public float getPreciototal() {
         return preciototal;
     }
-    public Object getFecha(){
+
+    public Object getFecha() {
         return fecha;
     }
-    public Object getHora(){
+
+    public Object getHora() {
         return hora;
     }
-    public boolean getEstado(){
+
+    public boolean getEstado() {
         return estado;
     }
-    public String getCuit(){
+
+    public String getCuit() {
         return cuit;
     }
-    public int getCodmatc(){
+
+    public int getCodmatc() {
         return codmatc;
     }
 
 
-/*Todo los codigos set*/
-    public void setCodpedprov(int codpedprov){
+    /*Todo los codigos set*/
+    public void setCodpedprov(int codpedprov) {
         this.codpedprov = codpedprov;
     }
-    public void setCantidad(int cantidad){
+
+    public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
-    public void setPreciototal(float preciototal){
+
+    public void setPreciototal(float preciototal) {
         this.preciototal = preciototal;
     }
-    public void setFecha(Object fecha){
+
+    public void setFecha(Object fecha) {
         this.fecha = fecha;
     }
-    public void setHora(Object hora){
+
+    public void setHora(Object hora) {
         this.hora = hora;
     }
-    public void setEstado(boolean estado){
+
+    public void setEstado(boolean estado) {
         this.estado = estado;
     }
-    public void setCuit(String cuit){
+
+    public void setCuit(String cuit) {
         this.cuit = cuit;
     }
-    public void setCodmatc(int codmatc){
+
+    public void setCodmatc(int codmatc) {
         this.codmatc = codmatc;
     }
 

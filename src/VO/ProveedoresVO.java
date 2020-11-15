@@ -2,40 +2,47 @@ package VO;
 
 public class ProveedoresVO {
 
-/*Todo los atributos*/
+    /*Todo los atributos*/
     String cuit;
     String nombre;
     String telefono;
     String direccion;
 
-public ProveedoresVO(){}
+    public ProveedoresVO() {
+    }
 
-/*Todo los codigos get*/
-    public String getCuit(){
+    /*Todo los codigos get*/
+    public String getCuit() {
         return cuit;
     }
-    public String getNombre(){
+
+    public String getNombre() {
         return nombre;
     }
-    public String getTelefono(){
+
+    public String getTelefono() {
         return telefono;
     }
-    public String getDireccion(){
+
+    public String getDireccion() {
         return direccion;
     }
 
 
-/*Todo los codigos set*/
-    public void setCuit(String cuit){
+    /*Todo los codigos set*/
+    public void setCuit(String cuit) {
         this.cuit = cuit;
     }
-    public void setNombre(String nombre){
+
+    public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    public void setTelefono(String telefono){
+
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
-    public void setDireccion(String direccion){
+
+    public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
 

@@ -2,7 +2,7 @@ package VO;
 
 public class PedidosclientesVO {
 
-/*Todo los atributos*/
+    /*Todo los atributos*/
     int codpedcliente;
     float montototal;
     Object fecha;
@@ -12,58 +12,73 @@ public class PedidosclientesVO {
     boolean estado;
     String dnicliente;
 
-public PedidosclientesVO(){}
+    public PedidosclientesVO() {
+    }
 
-/*Todo los codigos get*/
-    public int getCodpedcliente(){
+    /*Todo los codigos get*/
+    public int getCodpedcliente() {
         return codpedcliente;
     }
-    public float getMontototal(){
+
+    public float getMontototal() {
         return montototal;
     }
-    public Object getFecha(){
+
+    public Object getFecha() {
         return fecha;
     }
-    public Object getHora(){
+
+    public Object getHora() {
         return hora;
     }
-    public String getModopedido(){
+
+    public String getModopedido() {
         return modopedido;
     }
-    public String getFormapago(){
+
+    public String getFormapago() {
         return formapago;
     }
-    public boolean getEstado(){
+
+    public boolean getEstado() {
         return estado;
     }
-    public String getDnicliente(){
+
+    public String getDnicliente() {
         return dnicliente;
     }
 
 
-/*Todo los codigos set*/
-    public void setCodpedcliente(int codpedcliente){
+    /*Todo los codigos set*/
+    public void setCodpedcliente(int codpedcliente) {
         this.codpedcliente = codpedcliente;
     }
-    public void setMontototal(float montototal){
+
+    public void setMontototal(float montototal) {
         this.montototal = montototal;
     }
-    public void setFecha(Object fecha){
+
+    public void setFecha(Object fecha) {
         this.fecha = fecha;
     }
-    public void setHora(Object hora){
+
+    public void setHora(Object hora) {
         this.hora = hora;
     }
-    public void setModopedido(String modopedido){
+
+    public void setModopedido(String modopedido) {
         this.modopedido = modopedido;
     }
-    public void setFormapago(String formapago){
+
+    public void setFormapago(String formapago) {
         this.formapago = formapago;
     }
-    public void setEstado(boolean estado){
+
+    public void setEstado(boolean estado) {
         this.estado = estado;
     }
-    public void setDnicliente(String dnicliente){
+
+    public void setDnicliente(String dnicliente) {
         this.dnicliente = dnicliente;
     }
 
