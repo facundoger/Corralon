@@ -2,3 +2,5 @@
 /.idea/
 /nbproject/
 /Corralon.iml
+/build.xml
+/manifest.mf
